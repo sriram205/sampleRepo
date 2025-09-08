@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.mylist
+{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+  color: hsl(0, 100%, 100%);
+  background-color: hsla(0, 95%, 48%, 0.418);
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.textt
+{
+  font-size: 1rem;
+  margin-left: 20px; 
+  margin-right: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.inputtext{
+  font-size: 2rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  width: 75%;
+  text-align: center;
+  
+}
+
+.orderlist li
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1px;
+  list-style: none;
+  width: 500px; 
+  
+  background-color: hsla(0, 0%, 86%, 0.988);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  
+  
+}
+h1{
+  margin-bottom: 20px;
+  text-align: center;
+  color: black;
+  font-family: fantasy;
+}
+img{
+  width: 55px;
+  border-radius: 5px;
+}
+.myinput button
+{
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0px solid;
+  margin-left: 20px;
+  background-color: hsl(113, 62%, 63%);
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
+}
+.taskbar{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow:scroll;
+  padding: 10px;
+  height: 400px;
+  scrollbar-width: none;
+
+}
+.threebtn{
+  display: flex;
+  align-items: center;
+
+}
+.threebtn button{
+  margin-left: 10px;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.threebtn button:hover{
+  opacity: 0.7;
+}
+
+.myinput{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
