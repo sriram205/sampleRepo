@@ -1,20 +1,18 @@
-*{
+/* Base CSS (your existing code) */
+* {
   margin:0px;
   padding: 0px;
   box-sizing: border-box;
   text-decoration: none;
   font-family: monospace;
 }
-body
-{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
-.mylist
-{
+.mylist {
   background-color:aquamarine ;
   margin: 20px;
   min-width: 300px;
@@ -23,28 +21,23 @@ body
   height: 90vh;
   border-radius: 10px;
 }
-h1{
+h1 {
   text-align: center;
   padding: 10px 0px;
   font-weight: bold;
   color: rgb(255, 111, 135);
   font-size: 3rem;
 }
-.myinput
-{
+.myinput {
   text-align: center;
   margin-bottom: 25px;
 }
-
-
-.inputtext
-{
+.inputtext {
   font-size: 1.5rem;
   padding: 5px 10px;
   width: 80%;
 }
-.myinput button
-{
+.myinput button {
   min-width: 50px;
   font-size: 1.7rem;
   padding: 5px 10px;
@@ -56,52 +49,39 @@ h1{
   color: white ;
   cursor: pointer;
 }
-
-.myinput button:hover{
+.myinput button:hover {
   background-color: rgba(239, 115, 177, 0.75);
 }
-.orli 
-{
+.orli {
    display: flex;
-   
    width: 100%;
    align-items: center;
    flex-direction: column;
    height: 70vh;
    overflow: scroll;
-   scrollbar-3dlight-color: aquamarine;
    scrollbar-width: thin;
    overflow-x: hidden;
    overflow-wrap:anywhere;
-   /* Works on Firefox */
-
-  scrollbar-width: thin;         
-  scrollbar-color: rgb(194, 194, 194) aquamarine;
-
-  }
-  
-  .orli li{
-
-
-    display: flex;
-    border: 1px solid hsla(0, 0%, 0%, 0.5);
-    width: 92%;
-    background-color: blanchedalmond;
-    height: auto;
-    justify-content: space-between;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px 10px;
-    font-size: 1.5rem;
-  
+   scrollbar-color: rgb(194, 194, 194) aquamarine;
 }
-.textt{
+.orli li {
+  display: flex;
+  border: 1px solid hsla(0, 0%, 0%, 0.5);
+  width: 92%;
+  background-color: blanchedalmond;
+  height: auto;
+  justify-content: space-between;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+.textt {
   width: 75%;
   overflow:hidden;
   text-overflow: ellipsis;
 }
-.threebtn button
-{
+.threebtn button {
   margin: 0px 5px;
   border: none;
   background-color: transparent;
@@ -110,5 +90,85 @@ h1{
 .threebtn {
   display: flex;
   min-width: 50px;
+}
 
+/* ------------------ MEDIA QUERIES ------------------ */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .mylist {
+    width: 60vw;
+    height: 85vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large mobiles and portrait tablets */
+@media (max-width: 768px) {
+  .mylist {
+    width: 80vw;
+    height: 85vh;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .inputtext {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+  .myinput button {
+    width: auto;
+    font-size: 1.2rem;
+    padding: 5px 8px;
+  }
+  .orli li {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+}
+
+/* Small mobiles */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+  .mylist {
+    width: 95vw;
+    height: auto;
+    min-height: 90vh;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .inputtext {
+    width: 65%;
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .myinput button {
+    width: auto;
+    font-size: 1rem;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  .orli {
+    height: auto;
+    max-height: 60vh;
+  }
+  .orli li {
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .textt {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .threebtn {
+    justify-content: flex-end;
+    width: 100%;
+  }
 }
